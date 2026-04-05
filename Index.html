@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Repaso de Ciencias para 6to Básico - Método Científico, Atmósfera y Protección Ambiental">
+    <title>Repaso Ciencias 6to Básico</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background-color: #f4f7f6;
+            padding: 15px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        main {
+            max-width: 450px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #2e7d32;
+            font-size: 22px;
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #1565c0;
+            font-size: 18px;
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
+
+        .box {
+            background: #e3f2fd;
+            border-left: 5px solid #2196f3;
+            padding: 12px;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .box.warning {
+            background: #fff3e0;
+            border-color: #ff9800;
+        }
+
+        .box ul {
+            margin-top: 8px;
+        }
+
+        .box li {
+            margin-bottom: 6px;
+        }
+
+        button {
+            background: #2e7d32;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            font-size: 16px;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #1b5e20;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        button:focus {
+            outline: 2px solid #2e7d32;
+            outline-offset: 2px;
+        }
+
+        .check {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        #feedback {
+            display: none;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 15px;
+            padding: 12px;
+            border-radius: 8px;
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            border: 1px solid #2e7d32;
+        }
+
+        #feedback.error {
+            background-color: #ffebee;
+            color: #c62828;
+            border-color: #c62828;
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <article class="card">
+            <h1>🔬 Mi Plan de Ciencias (15')</h1>
+
+            <section>
+                <h2>1. Método Científico (Habilidades)</h2>
+                <div class="box">
+                    <strong>Ruta del Investigador:</strong>
+                    <ol>
+                        <li><strong>Observación:</strong> Detectar un fenómeno.</li>
+                        <li><strong>Pregunta:</strong> ¿Cómo afecta X a Y?</li>
+                        <li><strong>Hipótesis:</strong> Tu respuesta probable.</li>
+                        <li><strong>Variables:</strong> Reconocer qué cambia y qué se mide.</li>
+                        <li><strong>Conclusión:</strong> ¿Se cumplió la hipótesis?</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section>
+                <h2>2. Capas de la Atmósfera</h2>
+                <ul>
+                    <li><strong>Troposfera:</strong> Donde vivimos. Ocurre el clima y está el aire (nitrógeno/oxígeno).</li>
+                    <li><strong>Estratosfera:</strong> ¡Importante! Aquí está la <strong>Capa de Ozono</strong> que filtra rayos UV.</li>
+                    <li><strong>Mesosfera:</strong> La capa más fría, detiene meteoritos.</li>
+                    <li><strong>Termosfera:</strong> Altas temperaturas, están los satélites.</li>
+                    <li><strong>Exosfera:</strong> El límite con el espacio.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>3. Alteraciones y Protección</h2>
+                <div class="box warning">
+                    <div>
+                        <p><span class="check">⚠ Amenazas:</span></p>
+                        <ul>
+                            <li><strong>Efecto Invernadero:</strong> Exceso de CO₂ atrapa calor.</li>
+                            <li><strong>Lluvia Ácida:</strong> Gases de fábricas + humedad.</li>
+                            <li><strong>Capa de Ozono:</strong> Dañada por químicos (CFC).</li>
+                        </ul>
+                    </div>
+                    <div style="margin-top: 10px;">
+                        <p><span class="check">🌱 Protección:</span> Usar energías limpias y reducir contaminación.</p>
+                    </div>
+                </div>
+            </section>
+
+            <button type="button" aria-label="Iniciar prueba de conocimiento">
+                ✅ ¡PONME A PRUEBA!
+            </button>
+            <div id="feedback" role="status" aria-live="polite"></div>
+        </article>
+    </main>
+
+    <script>
+        const button = document.querySelector('button');
+        const feedbackDiv = document.getElementById('feedback');
+
+        button.addEventListener('click', validar);
+
+        function validar() {
+            feedbackDiv.classList.remove('error');
+
+            const p1 = prompt(
+                "¿En qué capa está el Ozono?\n\n(A) Troposfera\n(B) Estratosfera"
+            );
+
+            if (!p1) {
+                return; // Usuario canceló el diálogo
+            }
+
+            if (p1.toUpperCase() === 'B') {
+                const p2 = confirm(
+                    "¿La hipótesis es una respuesta provisoria que se debe probar?"
+                );
+
+                if (p2) {
+                    feedbackDiv.style.display = 'block';
+                    feedbackDiv.textContent = "¡Excelente! Estás lista para la prueba. 🚀";
+                } else {
+                    feedbackDiv.style.display = 'block';
+                    feedbackDiv.classList.add('error');
+                    feedbackDiv.textContent = "¡Casi! La hipótesis SIEMPRE se debe probar con experimentos.";
+                }
+            } else {
+                feedbackDiv.style.display = 'block';
+                feedbackDiv.classList.add('error');
+                feedbackDiv.textContent = "Recuerda: El Ozono está en la Estratosfera (Capa B).";
+            }
+        }
+    </script>
+</body>
+</html>
